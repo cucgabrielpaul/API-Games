@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games API</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Snap.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <ul>
+        <li><button class="addgamesfromapi">ADD GAMES FROM API</button></li>
+        <li><button class="addgame">ADD NEW GAME</button></li>
+        <li><button class="regenerate">RESET API</button></li>
+      </ul>
+
+      <form action="#" name="form_name" id="form_id">
+        <h1>Add Game</h1>
+        <p>Please fill this form to add a game to API.</p>
+        <hr />
+        <div class="container">
+          <label for="title">Title :</label>
+          <input
+            id="title"
+            type="text"
+            placeholder="Title"
+            name="title"
+            required
+          />
+          <br />
+          <br />
+          <label for="releaseDate">Release date :</label>
+          <input
+            id="releaseDate"
+            type="date"
+            placeholder="Release date"
+            name="releaseDate"
+            required
+          />
+          <br />
+          <br />
+          <label for="genre">Genre :</label>
+          <input
+            id="genre"
+            type="text"
+            placeholder="Genre"
+            name="genre"
+            required
+          />
+          <br />
+          <br />
+          <label for="publisher">Publisher :</label>
+          <input
+            id="publisher"
+            type="text"
+            placeholder="Publisher"
+            name="publisher"
+            required
+          />
+          <br />
+          <br />
+          <label for="imageUrl">Image URL :</label>
+          <input
+            id="imageUrl"
+            type="text"
+            placeholder="Image URL"
+            name="imageUrl"
+            required
+          />
+          <hr />
+          <br />
+          <button id="registerbtn" type="submit">
+            Create
+          </button>
+          <button id="cancelbtn" type="submit">
+            Cancel
+          </button>
+          <br />
+          <br />
+          <hr />
+        </div>
+      </form>
+      <br />
+      <div id="articles"></div>
+
+      <div id="template">
+        <h3 class="title"></h3>
+        <img />
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <button class="details">Details</button>
+        <button class="delete">Delete</button>
+        <button class="edit">Edit Title</button>
+      </div>
+    </div>
+
+    <script src="Homework/apiCalls.js"></script>
+    <script src="Homework/script.js"></script>
+  </body>
+</html>
